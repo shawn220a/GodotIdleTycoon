@@ -1,6 +1,6 @@
 extends Panel
 
-var money = 0
+var money = 5
 var store_count = 0
 
 var store_cost = 5
@@ -15,11 +15,13 @@ func UpdateUI():
 	$StoreCountLabel.text = "Store Count: " + str(store_count)
 
 func _on_ClickButton_pressed():
-	money += store_profit
+	money += store_profit * store_count
 	UpdateUI()
 
 func _on_BuyButton_pressed():
 	if store_cost <= money:
 		store_count += 1
 		money -= store_cost
-	UpdateUI()
+		UpdateUI()
+	else:
+		print("you don't have enough money")

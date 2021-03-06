@@ -1,6 +1,5 @@
 extends Panel
 
-# Declare member variables here. Examples:
 var money = 0
 var storeCount = 0
 
@@ -18,4 +17,4 @@ func _on_ClickButton_pressed():
 
 func _on_BuyButton_pressed():
 	storeCount = storeCount + 1
-	UpdateUI()# Replace with function body.
+	UpdateUI()

@@ -1,11 +1,10 @@
 extends Panel
 
 # Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var money = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$MoneyLabel.text = "$0.00"
+	$MoneyLabel.text = "$ " + str(money)
 	
 

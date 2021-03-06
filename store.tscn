@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://store.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+margin_left = 49.1177
+margin_top = 30.1594
+margin_right = 957.118
+margin_bottom = 552.159
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoneyLabel" type="Label" parent="."]
+margin_left = 325.0
+margin_top = 59.0
+margin_right = 556.0
+margin_bottom = 149.0
+text = "Hello World"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

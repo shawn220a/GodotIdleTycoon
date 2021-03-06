@@ -3,9 +3,9 @@
 [ext_resource path="res://store.gd" type="Script" id=1]
 
 [node name="Panel" type="Panel"]
-margin_left = 48.6177
+margin_left = 48.1177
 margin_top = 30.1594
-margin_right = 956.618
+margin_right = 956.118
 margin_bottom = 552.159
 script = ExtResource( 1 )
 __meta__ = {
@@ -19,7 +19,7 @@ margin_left = -80.0002
 margin_top = 39.0
 margin_right = 73.9998
 margin_bottom = 70.0
-text = "Money"
+text = "[Money]"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -34,4 +34,11 @@ text = "Click Me!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="StoreCount" type="Label" parent="."]
+margin_left = 224.5
+margin_top = 142.5
+margin_right = 327.5
+margin_bottom = 170.5
+text = "[0]"
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

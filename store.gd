@@ -7,4 +7,3 @@ var money = 0
 func _ready():
 	$MoneyLabel.text = "$ " + str(money)
 	
-

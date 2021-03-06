@@ -7,3 +7,7 @@ var money = 0
 func _ready():
 	$MoneyLabel.text = "$ " + str(money)
 	
+
+
+func _on_Button_pressed():
+	pass # Replace with function body.

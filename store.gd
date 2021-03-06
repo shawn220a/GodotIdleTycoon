@@ -12,9 +12,10 @@ func UpdateUI():
 	$StoreCountLabel.text = "Store Count: " + str(store_count)
 
 func _on_ClickButton_pressed():
-	money = money + 1
+	money += 1
 	UpdateUI()
 
 func _on_BuyButton_pressed():
-	store_count = store_count + 1
+	store_count += 1
+	money -= 5
 	UpdateUI()

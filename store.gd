@@ -11,6 +11,5 @@ func UpdateUI():
 	$MoneyLabel.text = "$ " + str(money)
 
 func _on_Button_pressed():
-	print("You clicked the button")
 	money = money + 1
 	UpdateUI()

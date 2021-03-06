@@ -16,6 +16,7 @@ func _on_ClickButton_pressed():
 	UpdateUI()
 
 func _on_BuyButton_pressed():
-	store_count += 1
-	money -= 5
+	if money >= 5:
+		store_count += 1
+		money -= 5
 	UpdateUI()

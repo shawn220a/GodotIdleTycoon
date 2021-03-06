@@ -10,7 +10,7 @@ func _ready():
 
 func UpdateUI():
 	$MoneyLabel.text = "$ " + str(money)
-	$StoreCount.text = "Store Count: " + str(storeCount)
+	$StoreCountLabel.text = "Store Count: " + str(storeCount)
 
 func _on_ClickButton_pressed():
 	money = money + 1

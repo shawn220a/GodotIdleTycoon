@@ -17,7 +17,6 @@ margin_left = 325.0
 margin_top = 59.0
 margin_right = 556.0
 margin_bottom = 149.0
-text = "Hello World"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

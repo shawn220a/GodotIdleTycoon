@@ -90,6 +90,10 @@ margin_left = 160.5
 margin_top = 70.0
 margin_right = 296.5
 margin_bottom = 102.0
+max_value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PopupDialog" type="PopupDialog" parent="."]
 visible = true

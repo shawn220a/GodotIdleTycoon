@@ -16,6 +16,7 @@ func UpdateUI():
 
 func _on_ClickButton_pressed():
 	$StoreTimer.start()
+	$ProgressTimer.start()
 
 func _on_BuyButton_pressed():
 	if store_cost <= money:
@@ -30,9 +31,15 @@ func _on_BuyButton_pressed():
 
 func _on_StoreTimer_timeout():
 	$StoreTimer.stop()
+	$ProgressTimer.stop()
+	$ProgressBar.set("value", 0)
+
 	money += store_profit * store_count
+
 	UpdateUI()
 
 
 func _on_ProgressTimer_timeout():
-	pass # Replace with function body.
+	var current_progress = ($StoreTimer.wait_time - $StoreTimer.time_left) / $StoreTimer.wait_time
+	
+	$ProgressBar.set("value", current_progress)

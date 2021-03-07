@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://store.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
 
 [node name="Panel" type="Panel"]
 margin_left = 47.6177
@@ -26,31 +27,34 @@ __meta__ = {
 }
 
 [node name="ClickButton" type="Button" parent="."]
-margin_left = 374.0
-margin_top = 81.0
-margin_right = 526.0
-margin_bottom = 122.0
-text = "Click Me!"
+margin_left = 95.5
+margin_top = 158.0
+margin_right = 235.5
+margin_bottom = 292.0
+icon = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BuyButton" type="Button" parent="."]
-margin_left = 200.0
-margin_top = 177.0
-margin_right = 352.0
-margin_bottom = 218.0
-text = "Buy a Store"
+margin_left = 117.5
+margin_top = 337.0
+margin_right = 209.5
+margin_bottom = 383.0
+text = "Buy Store"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StoreCountLabel" type="Label" parent="."]
-margin_left = 224.5
-margin_top = 142.5
-margin_right = 327.5
-margin_bottom = 170.5
+margin_left = 112.5
+margin_top = 308.5
+margin_right = 215.5
+margin_bottom = 336.5
 text = "[0]"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="ClickButton" to="." method="_on_ClickButton_pressed"]
 [connection signal="pressed" from="BuyButton" to="." method="_on_BuyButton_pressed"]

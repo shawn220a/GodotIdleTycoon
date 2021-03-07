@@ -96,7 +96,6 @@ __meta__ = {
 }
 
 [node name="PopupDialog" type="PopupDialog" parent="."]
-visible = true
 margin_left = 311.5
 margin_top = 191.0
 margin_right = 658.5

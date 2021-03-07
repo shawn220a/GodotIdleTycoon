@@ -15,8 +15,7 @@ func UpdateUI():
 	$StoreCountLabel.text = "Store Count: " + str(store_count)
 
 func _on_ClickButton_pressed():
-	money += store_profit * store_count
-	UpdateUI()
+	$StoreTimer.start()
 
 func _on_BuyButton_pressed():
 	if store_cost <= money:
@@ -30,4 +29,5 @@ func _on_BuyButton_pressed():
 
 
 func _on_StoreTimer_timeout():
-	pass # Replace with function body.
+	money += store_profit * store_count
+	UpdateUI()

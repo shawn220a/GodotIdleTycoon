@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://store.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -8,11 +8,14 @@
 size = 36
 font_data = ExtResource( 3 )
 
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
+
 [node name="Panel" type="Panel"]
-margin_left = 21.0
-margin_top = 38.0
-margin_right = 334.0
-margin_bottom = 229.0
+margin_left = 20.5
+margin_top = 71.5
+margin_right = 333.5
+margin_bottom = 262.5
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -21,10 +24,10 @@ __meta__ = {
 [node name="MoneyLabel" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 195.5
-margin_top = -29.0
-margin_right = 349.5
-margin_bottom = 2.0
+margin_left = 195.0
+margin_top = -52.5
+margin_right = 349.0
+margin_bottom = -11.5
 custom_fonts/font = SubResource( 1 )
 text = "[Money]"
 align = 1
@@ -35,10 +38,11 @@ __meta__ = {
 [node name="LemonadeStandLabel" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 16.5
-margin_top = 25.0
-margin_right = 144.5
-margin_bottom = 59.0
+margin_left = 12.5
+margin_top = 24.5
+margin_right = 140.5
+margin_bottom = 58.5
+custom_fonts/font = SubResource( 2 )
 text = "Lemonade Stand"
 align = 1
 valign = 1

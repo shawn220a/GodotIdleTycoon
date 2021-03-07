@@ -25,3 +25,5 @@ func _on_BuyButton_pressed():
 		UpdateUI()
 	else:
 		$PopupDialog.popup()
+		yield(get_tree().create_timer(1), "timeout")
+		$PopupDialog.hide()

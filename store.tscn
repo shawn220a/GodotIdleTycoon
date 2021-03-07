@@ -1,14 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://store.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://fonts/arial.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 20
+size = 36
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
 font_data = ExtResource( 3 )
 
 [node name="Panel" type="Panel"]
@@ -95,13 +99,11 @@ margin_right = 628.0
 margin_bottom = 278.5
 
 [node name="MessageLabel" type="Label" parent="PopupDialog"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -150.5
-margin_top = 31.5
-margin_right = 155.5
-margin_bottom = 72.5
-custom_fonts/font = SubResource( 1 )
+margin_left = 28.5
+margin_top = 26.5
+margin_right = 324.5
+margin_bottom = 78.5
+custom_fonts/font = SubResource( 3 )
 text = "You don't have enough money!"
 align = 1
 valign = 1

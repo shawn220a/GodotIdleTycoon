@@ -29,5 +29,6 @@ func _on_BuyButton_pressed():
 
 
 func _on_StoreTimer_timeout():
+	$StoreTimer.stop()
 	money += store_profit * store_count
 	UpdateUI()

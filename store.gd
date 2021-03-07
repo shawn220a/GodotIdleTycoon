@@ -32,3 +32,7 @@ func _on_StoreTimer_timeout():
 	$StoreTimer.stop()
 	money += store_profit * store_count
 	UpdateUI()
+
+
+func _on_ProgressTimer_timeout():
+	pass # Replace with function body.

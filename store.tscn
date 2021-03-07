@@ -113,6 +113,10 @@ __meta__ = {
 
 [node name="StoreTimer" type="Timer" parent="."]
 wait_time = 2.0
+
+[node name="ProgressTimer" type="Timer" parent="."]
+wait_time = 0.01
 [connection signal="pressed" from="ClickButton" to="." method="_on_ClickButton_pressed"]
 [connection signal="pressed" from="BuyButton" to="." method="_on_BuyButton_pressed"]
 [connection signal="timeout" from="StoreTimer" to="." method="_on_StoreTimer_timeout"]
+[connection signal="timeout" from="ProgressTimer" to="." method="_on_ProgressTimer_timeout"]

@@ -27,3 +27,7 @@ func _on_BuyButton_pressed():
 		$PopupDialog.popup()
 		yield(get_tree().create_timer(1), "timeout")
 		$PopupDialog.hide()
+
+
+func _on_StoreTimer_timeout():
+	pass # Replace with function body.

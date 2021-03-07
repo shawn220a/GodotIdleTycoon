@@ -110,5 +110,9 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="StoreTimer" type="Timer" parent="."]
+wait_time = 2.0
 [connection signal="pressed" from="ClickButton" to="." method="_on_ClickButton_pressed"]
 [connection signal="pressed" from="BuyButton" to="." method="_on_BuyButton_pressed"]
+[connection signal="timeout" from="StoreTimer" to="." method="_on_StoreTimer_timeout"]

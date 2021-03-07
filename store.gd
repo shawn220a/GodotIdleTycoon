@@ -24,4 +24,4 @@ func _on_BuyButton_pressed():
 		money -= store_cost
 		UpdateUI()
 	else:
-		print("you don't have enough money")
+		$PopupDialog.popup()

@@ -5,9 +5,9 @@
 
 [node name="Panel" type="Panel"]
 margin_left = 47.6177
-margin_top = 30.1594
+margin_top = 29.6594
 margin_right = 955.618
-margin_bottom = 552.159
+margin_bottom = 551.659
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -21,6 +21,19 @@ margin_top = 39.0
 margin_right = 73.9998
 margin_bottom = 70.0
 text = "[Money]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LemonadeStandLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -361.0
+margin_top = 139.5
+margin_right = -207.0
+margin_bottom = 170.5
+text = "Lemonade Stand"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
